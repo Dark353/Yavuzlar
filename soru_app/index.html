@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yavuzlar soru app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main-page" class="container active">
+        <div class="title">Yavuzlar Soru Uygulaması Yönetim Paneli</div>
+        <a href="#" id="list-button" class="button">Soruları Listele</a>
+        <a href="#" id="start-quiz-button" class="button">Başlat</a>
+    </div>
+
+    <div id="question-panel" class="question-panel">
+        <input type="text" class="input-box" id="search-bar" placeholder="Soru Ara">
+
+        <div id="question-list"></div>
+
+        <a href="#" id="back-button" class="button">Geri</a>
+        <a href="#" id="add-question-button" class="add-question-button">Soru Ekle</a>
+    </div>
+
+    <div id="add-question-panel" class="add-question-panel">
+        <div class="form-group">
+            <label for="question">Soru:</label>
+            <input type="text" id="question" class="input-box">
+        </div>
+
+        <div class="form-group">
+            <label for="choice1">Şık 1:</label>
+            <input type="text" id="choice1" class="input-box">
+        </div>
+
+        <div class="form-group">
+            <label for="choice2">Şık 2:</label>
+            <input type="text" id="choice2" class="input-box">
+        </div>
+
+        <div class="form-group">
+            <label for="choice3">Şık 3:</label>
+            <input type="text" id="choice3" class="input-box">
+        </div>
+
+        <div class="form-group">
+            <label for="choice4">Şık 4:</label>
+            <input type="text" id="choice4" class="input-box">
+        </div>
+
+        <div class="form-group">
+            <label for="correct-answer">Doğru Cevap:</label>
+            <select id="correct-answer" class="input-box">
+                <option value="1">Şık 1</option>
+                <option value="2">Şık 2</option>
+                <option value="3">Şık 3</option>
+                <option value="4">Şık 4</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="difficulty">Zorluk Seviyesi:</label>
+            <select id="difficulty" class="input-box">
+                <option value="easy">Kolay</option>
+                <option value="medium">Orta</option>
+                <option value="hard">Zor</option>
+            </select>
+        </div>
+
+        <button id="save-question-button" class="button">Soruyu Kaydet</button>
+        <a href="#" id="cancel-add-button" class="button">Geri</a>
+    </div>
+<script src="js.js"></script>
+</body>
+
+</html>
